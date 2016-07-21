@@ -1,0 +1,7 @@
+/* banner */
+.banner{width:100%;height:450px;position: relative;}
+.banner a{display: none;position: absolute;left:0;top:0;}
+.bannerBtn{width:1200px;height:6px;margin:0 auto; overflow:hidden;}
+.bannerBtn div {display: inline-block;height:auto;width:235px;position: relative;}
+.bannerBtn div:nth-child(1){margin-left:0;}
+.bannerBtn div p{display:inline-block; width:0px;height:6px;background: #661166; position: absolute;left: 0;top:-12px;}

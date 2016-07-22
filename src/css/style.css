@@ -1,8 +1,8 @@
-html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,img{ margin:0; padding:0;}
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,img,table,tbody,tr,td{ margin:0; padding:0;}
 a{text-decoration:none;}
 img{border:none;}
 ul,ol,li{ list-style:none;}
-body{font:12px "微软雅黑";height:5000px;}
+body{font:12px "微软雅黑";height:5000px;width:100%;overflow-x: hidden;}
 .left{ float:left;}
 .right{ float:right;}
 .triangle{ 
@@ -20,7 +20,10 @@ body{font:12px "微软雅黑";height:5000px;}
 	width:64px;
 }
 .top li:hover .triangle{
-	animation:zhuan 400s linear 1;	
+	transition: transform 200ms;
+	-moz-transition: transform 200ms; /* Firefox 4 */
+	-webkit-transition: transform 200ms; /* Safari 和 Chrome */
+	-o-transition: transform 200ms; /* Opera */
 	transform:rotate(180deg);
 }
 .top li:hover .subList{
@@ -42,15 +45,30 @@ body{font:12px "微软雅黑";height:5000px;}
 .subList{position: absolute;border: 1px solid #d4d4d4;border-top:0;top:30px;left:-1px;padding:0 3px;display: none;margin-top:-2px;}
 .subList a{display: block;width:64px;height:30px;margin:0;background: #fff;line-height: 30px;border:1px;}
 /* nav */
-nav{width:1200px;height:66px;margin:0 auto;}
+nav{width:100%;background: #fff;box-shadow: 0 3px 3px 1px #e1e1e1;z-index:10;}
+nav>div{width:1200px;height:66px;margin:0 auto;}
 .logo{padding-top:10px;}
 .nav{position: relative;}
 .nav li{float: left;}
 .listBottom{height:3px;width:0;margin: 0 auto;background: #616;}
 .nav li a{height:64px;line-height: 66px; color:#333;display: inline-block;padding:0 25px;font-size: 14px;}
-.nav .subNav{min-width:800px;height:280px;position:absolute;left:0px;top:66px;display:none;}
-.subNav ul{float:left;width:120px;height:260px;margin:10px 0;padding-left:30px;border-right:1px dotted #dadada;background:rgba(255,255,255,0.85);}
+.nav .subNav{width:800px;height:280px;position:absolute;left:0px;top:66px;display:none;z-index: 2;background:rgba(255,255,255,0.85);}
+.subNav ul{float:left;width:120px;height:260px;margin:10px 0;padding-left:30px;border-right:1px dotted #dadada;}
 .subNav ul a{display:block;width:120px;height:26px;line-height: 26px;color: #97989a;padding:0;font-size: 10px;}
+/*footer*/
+footer{width:100%;background: #333;}
+.footerpic{margin: 0 auto; display: block;padding:30px 0;}
+.footnav{width:100%;border-top:1px solid #444;padding-top:32px;}
+.footnav>div{width:1200px;margin: 0 auto;overflow: hidden;}
+.footnav ul{float: left;width:184px;height:210px;color: #bbb;}
+.footnav ul li{margin-left:26px;}
+.footnav ul li a {color: #bbb;line-height: 20px;}
+.footnav .firstList{line-height: 18px;font-weight:bold;margin-bottom: 5px;margin-left:0;list-style: none;padding-left:26px;}
+.footList1{background: url(img/footpic1.png) no-repeat;}
+.footList2{background: url(img/footpic2.png) no-repeat;}
+.footList3{background: url(img/footpic3.png) no-repeat;}
+.footList4{background: url(img/footpic4.png) no-repeat;}
+.footList5{background: url(img/footpic5.png) no-repeat;}
 
 
 

@@ -194,16 +194,16 @@
 	<div class="zhuce_main">
 		<form class="zhucekuang right" name="zhuce">
 			<ul>
-				<li class="zhuce_username"><label><span>*</span>手机号:<input class="longinput" type="text" id="username" ></label></li>
-				<li><label><span>*</span>请输入密码:<input class="longinput" type="text" id="passwork" ></label></li>
-				<li><label><span>*</span>请确认密码:<input class="longinput" type="text" id="checkpasswork" ></label></li>
-				<li class="zhuce_checkcode"><label><span>*</span>验证码:<input class="shortinput" type="text" id="checkcode" ></label><span class="yanzhengma"></span></li>
+				<li class="zhuce_username"><label><span>*</span>手机号:<input class="longinput" type="text" id="username" ></label><div class="username_tip"></div></li>
+				<li><label><span>*</span>请输入密码:<input class="longinput" type="text" id="passwork" ></label><div class="passwork_tip"></div></li>
+				<li><label><span>*</span>请确认密码:<input class="longinput" type="text" id="checkpasswork" ></label><div class="checkpass_tip"></div></li>
+				<li class="zhuce_checkcode"><label><span>*</span>验证码:<input class="shortinput" type="text" id="checkcode" ></label><span class="yanzhengma"></span><span class="makecode"></span><div class="checkcode_tip"></div></li>
 				<li>
 					<label><span>*</span>短信验证码:<input class="shortinput" type="text" id="notecheck" ></label>
 					<input type="button" id="notebtn" value="获取短信验证码">
 				</li>
-				<li class="tongyi"><label for=""><input type="checkbox" id="tongyi">我已阅读并同意  服务协议</label></li>
-				<li class="zhuce_newuser"><input id="zhuce_submit" type="submit" value="注册新用户"></li>
+				<li class="tongyi"><label for=""><input type="checkbox" id="tongyi">我已阅读并同意  服务协议</label><div></div></li>
+				<li class="zhuce_newuser"><input id="zhuce_submit" type="submit" value="注册新用户"><div></div></li>
 			</ul>		
 		</form>
 	</div>
@@ -278,4 +278,5 @@
 </div>
 </body>
 <script src="../js/nav.js"></script>
+<script src="../js/zhuce.js"></script>
 </html>

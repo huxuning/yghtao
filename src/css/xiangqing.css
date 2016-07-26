@@ -1,0 +1,21 @@
+/*产品详情页*/
+.shangpinxiangqing{width:1200px; margin:0 auto;overflow: hidden;position: relative;}
+.xiaotu>img{width:72px;display: block;margin:0 10px 10px 0;}
+.xuanzhong{border: 1px solid #f03;}
+.datu{width:400px;height:400px;position: relative;border: 1px solid #ddd;}
+.overlay{width:400px;height:400px;position: absolute;top: 0;left:0;z-index: 3;}
+.datu>img{width:400px;position: absolute;top:0;left:0;display: none;}
+
+.xinxi{width:690px;margin-left:20px;color: #666;}
+.xinxi>h3{color: #333;font-size: 18px;padding-left: 14px;line-height: 18px;font-weight: normal;padding-bottom: 20px;border-bottom: dotted 1px #ccc;}
+.xinxi>p{line-height: 50px;}
+.xinxi input{width:28px;padding-left:8px;}
+.xinxi>div{line-height: 50px;}
+.tejia>span{font-size:18px;font-weight: bold;color: #f23540;}
+.shichangjia>span{text-decoration:line-through;color: #111;}
+.goumai,.jiaru{display: inline-block;width:179px;height:29px;background: #fb383b;color: #fff;font-size: 16px;text-align: center;line-height: 30px;border: 1px solid #f03;}
+.goumai:hover{background: #f03;}
+.jiaru{background: url(img/jiaru.png) 30px 8px no-repeat;color: #f03;margin:0 20px;}
+
+.fangdajing{width:400px;height:300px;position: absolute;left:500px;top:0;background: url(../img/datu1.jpg) no-repeat;border: 1px solid #ccc;display: none;}
+.area{width:200px;height:150px;position:absolute;background-color:rgba(43,28,186,0.3);display: none;}

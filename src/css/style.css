@@ -46,7 +46,7 @@ body{font:12px "微软雅黑";width:100%;overflow-x: hidden;}
 .subList{position: absolute;border: 1px solid #d4d4d4;border-top:0;top:30px;left:-1px;padding:0 3px;display: none;margin-top:-2px;}
 .subList a{display: block;width:64px;height:30px;margin:0;background: #fff;line-height: 30px;border:1px;}
 /* nav */
-nav{width:100%;background: #fff;box-shadow: 0 3px 3px 1px #e1e1e1;z-index:10;}
+nav{width:100%;background: #fff;box-shadow: 0 3px 3px 3px #ccc;z-index:10;}
 nav>div{width:1200px;height:66px;margin:0 auto;}
 .logo{padding-top:10px;}
 .nav{position: relative;}

@@ -5,7 +5,7 @@
 .nowPrice{font-size: 18px;color: #f92e69;padding-left:10px;font-weight: bold;}
 .beforePrice{font-size: 10px;color: #9ea1a1;margin:0 8px;text-decoration: line-through;}
 .suda{background: #650b65;color: #fff;padding:3px;}
-.lijiqianggou{float: right;display: inline-block;width:64px;height:22px;line-height: 22px;text-align: center;background: #f92e4f;color: #fff;margin-right: 5px;}
+.lijiqianggou{float: right;display: inline-block;width:64px;height:22px;line-height: 22px;text-align: center;background: #f92e4f;color: #fff;margin-right: 5px;cursor: pointer;}
 h3{width:100%;height:60px;}
 .f1{background: url(img/tit1.png) no-repeat center;}
 .f2{background: url(img/tit2.png) no-repeat center;}
@@ -14,7 +14,7 @@ h3{width:100%;height:60px;}
 .f5{background: url(img/tit5.png) no-repeat center;}
 .f6{background: url(img/tit_more.png) no-repeat center; }
 .louceng{width:1040px;margin: 0 auto;}
-.mzgh_goods{display: inline-block;width:223px;height:361px;border: 2px solid transparent;padding:15px;position: relative;background: #fff;margin-bottom: 5px;text-align: center;}
+.mzgh_goods{display: inline-block;width:223px;height:361px;border: 2px solid transparent;padding:15px;position: relative;background: #fff;margin-bottom: 5px;text-align: center;cursor: pointer;}
 .mzgh_goods:hover{border-color: #616;}
 .goodspic{display: block;margin:20px auto 0px auto;}
 .mzgh_goods>span{line-height: 18px;}

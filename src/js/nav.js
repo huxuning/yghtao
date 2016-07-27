@@ -25,4 +25,25 @@ $(window).on('scroll',function(){
 			position:'',
 		})
 	}
-})
+});
+//侧边栏购物车数量
+function gwcNum(){
+	var cookie = document.cookie;
+	var arr = cookie.split('; ');
+	console.log(arr)
+	for(var attr in arr){	 
+		if(arr[attr].indexOf('goods=') == 0){
+			var goodsinf = arr[attr].slice(6);
+			goodsinf = JSON.parse(goodsinf);
+			$('.goodsNum').html(goodsinf[0].count);		
+		}
+		//是否登录
+		if(arr[attr].indexOf('login=') == 0){
+			var loginName = arr[attr].slice(6);
+			document.getElementById('pleaselogin').innerHTML="您好，"+loginName;
+		}
+	
+	}
+	return goodsinf;
+};
+gwcNum();

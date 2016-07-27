@@ -19,3 +19,17 @@
 
 .fangdajing{width:400px;height:300px;position: absolute;left:500px;top:0;background: url(../img/datu1.jpg) no-repeat;border: 1px solid #ccc;display: none;}
 .area{width:200px;height:150px;position:absolute;background-color:rgba(43,28,186,0.3);display: none;}
+/*弹窗*/
+.layer{width:100%;height:100%;background: rgba(0,0,0,0.3);position: fixed;z-index: 14;top:0;left:0;display: none;}
+.tanchuang{width:425px;height:230px;position: fixed;top:50%;left:50%;margin:-100px 0 0 -213px;z-index: 15;background: #fff;display: none;}
+.tanchuang_title{height:36px;line-height: 36px;padding-left:15px;color: #fff;background: #616;}
+#close{float: right;width:36px;height:36px;text-align: center;font-size: 18px;}
+#close:hover{color: #000;cursor: pointer;}
+.joingwc{display: block; width:160px;height:24px;margin:40px auto 20px;background: url(img/joingwc.png) no-repeat;line-height: 24px;padding-left:40px;color: #666;font-size: 14px;}
+.statistics{width:245px;height:16px;margin:0 auto;}
+.statistics span{color:red;}
+.tanchuang_btn{height:36px;width:320px;margin:0 auto;margin-top:20px;}
+.gotogwc{display: inline-block;width:150px;height:36px;line-height: 36px;color: #fff;text-align: center;background: #f13746;margin-right:10px;}
+.continued{display: inline-block;width:150px;height:36px;line-height: 36px;color: #666;text-align: center;background: #f1f1f1;cursor: pointer;}
+.gotogwc:hover{background: #e11822;}
+.continued:hover{color: #000;}

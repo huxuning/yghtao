@@ -13,3 +13,9 @@
 .zhuce_newuser{padding-left:50px;}
 .passwork_tip,.username_tip,.checkpass_tip,.checkcode_tip{height:20px; padding-left:44px;width:270px;padding-top:3px;}
 #zhuce_submit{width:270px;height:40px;line-height: 40px;font-size: 15px;font-weight:bold; background: #616;border: none; outline: none; color: #fff;}
+
+/*登录页面*/
+.denglukuang{width:420px;height:439px;margin-top:30px;background:url(img/denglukuang.png) no-repeat;padding-top:75px;padding-left:80px;}
+.denglukuang .zhuce_username{padding: 0;}
+.denglukuang #login{width:270px;height:40px;line-height: 40px;font-size: 15px;font-weight:bold; background: #616;border: none; outline: none; color: #fff;}
+.mfzc{margin-top:30px;display: inline-block;color: #333;}

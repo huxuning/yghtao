@@ -9,9 +9,6 @@
 	//验证状态，false则不提价
 	var check = true;
 	//验证手机号码
-	username.onfocus=function(){
-
-	};
 	username.onblur=function(){
 		var tip = document.getElementsByClassName('username_tip')[0];
 		var value = this.value
@@ -105,7 +102,6 @@
 		}
 		//验证
 		checkcode.onblur=function(){
-			console.log(this.value,code.innerHTML)
 			if(this.value != code.innerHTML){
 				check = false;
 				tip.innerHTML="验证码错误";
@@ -117,6 +113,7 @@
 	}
 	//提交表单
 	submit.onclick=function(){
+		console.log(check)
 		//同意条款
 		if(!tongyi.checked){
 			return false;
@@ -124,6 +121,16 @@
 		//如果有验证不过，则不提交
 		if(!check){
 			return false;
+		}else{
+			//将注册信息存储
+			var date = new Date();
+			date.setDate(date.getDate()+15);
+			date = date.toGMTString();
+			document.cookie = "id"+$('#username').val()+"="+$('#username').val()+";expires="+date+";path=/";
+			document.cookie = "pass"+$('#username').val()+"="+$('#passwork').val()+";expires="+date+";path=/";
+			console.log(document.cookie)
+			alert('注册成功');
+			window.open('denglu.html');
 		}
-	}	
+	}
 })()

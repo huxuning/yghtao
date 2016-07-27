@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/gouwuche.css">
+	<script src="../js/jquery.js"></script>
 </head>
 <body>
 	<!-- top -->
@@ -11,8 +14,8 @@
 			<p class="left topLeft"><a href="../index.html">阳光海淘首页</a></p>
 			<div class="right topRight">
 				<span class="left">您好，欢迎来到阳光海淘</span>
-				<a class="left" href="login.html">请登录</a>
-				<a class="left" href="register.html">请注册</a>
+				<a id="pleaselogin" class="left" href="denglu.html">请登录</a>
+				<a class="left" href="zhuce.html">请注册</a>
 				<ul class="left dingdan">
 					<li>我的订单
 						<span class="triangle"></span>
@@ -49,7 +52,7 @@
 						</div>
 					</li>
 				</ul>
-				<p class="left shoppingCart">购物车 <span id="goodsNum"> 0 </span> 件</p>
+				<p class="left shoppingCart">购物车 <span class="goodsNum"> 0 </span> 件</p>
 			</div>
 		</div>
 	</div>
@@ -57,183 +60,41 @@
 	<nav>
 		<div>
 		<h1 class="logo left"><a href="index.html"><img src="../img/logo.png" alt=""></a></h1>
-		<ul class="left nav">
-			<li>
-				<a href="">美妆个护</a>
-				<div class="listBottom"></div>
-			</li>
-			<li>
-				<a href="">奶粉</a>
-				<div class="listBottom"></div>
-
-			</li>
-			<li>
-				<a href="">极速保税仓</a>
-				<div class="listBottom"></div>
-			</li>
-			<li>
-				<a href="">海外直邮</a>
-				<div class="listBottom"></div>
-			</li>
-			<div class="subNav">
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">美妆个护</a></li>
-					<li><a href="">面部护肤</a></li>
-					<li><a href="">身体洗护</a></li>
-					<li><a href="">洗发护发</a></li>
-					<li><a href="">口腔护理</a></li>
-					<li><a href="">手足护理</a></li>
-				</ul>
-			</div>
-			<div class="subNav">
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">美妆个护</a></li>
-					<li><a href="">面部护肤</a></li>
-					<li><a href="">身体洗护</a></li>
-					<li><a href="">洗发护发</a></li>
-					<li><a href="">口腔护理</a></li>
-					<li><a href="">手足护理</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-			</div>
-			<div class="subNav">
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-			</div>
-			<div class="subNav">
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-				<ul>
-					<li><a href="">品牌</a></li>
-					<li><a href="">jacob hooy 雅歌布</a></li>
-					<li><a href="">avene 雅漾</a></li>
-					<li><a href="">Montagne Jeuesse</a></li>
-					<li><a href="">Nuxe 欧树</a></li>
-					<li><a href="">Caudalie 欧缇丽</a></li>
-					<li><a href="">balea 芭乐雅</a></li>
-					<li><a href="">Bioderma 贝德玛</a></li>
-					<li><a href="">CHI</a></li>
-					<li><a href="">Mustela 妙乐思</a></li>
-				</ul>
-			</div>	
-		</ul>
+		<img class="right" src="../img/gwcliucheng.png" alt="">
 		</div>
 	</nav>
+<!-- main -->
+<div class="gwc_main">
+	<img class="gwcbj" src="../img/gwcpic.png" alt="">
+	<table class="gwctable" style="display:none">
+		<thead>
+			<tr>
+				<td>商品信息</td>
+				<td>税费</td>
+				<td>单价</td>
+				<td>数量</td>
+				<td>重量</td>
+				<td>商品小计</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="cpxx"><img src="../img/gwcgoods.jpg" alt=""><p>【海外直邮】英国Montagne Jeunesse面膜草莓奶油深层清洁15g*5【包邮】</p></td>
+				<td>￥0.00</td>
+				<td class="danjia"></td>
+				<td class="shuliang"><input type="number" value=""></td>
+				<td>80g</td>
+				<td class="xiaoji"></td>
+				<td class="caozuo"><span class="del">删除</span></td>
+			</tr>
+			<tr class="heji">
+				<td colspan="7">合计：<span class="zongshu"></span><span class="jiesuan">去结算</span></td>
+			</tr>
+		</tbody>
+	
+	</table>
+</div>
 <!-- footer -->
 <footer>
 	<img src="../img/footer.jpg" alt="" class="footerpic">
@@ -291,7 +152,7 @@
 <div class="sidebar">
 	<a href="" class="user"><img src="../img/side1.png" alt=""></a>
 	<div class="gouwuche">
-		 <span class="goodsNum sidegoodsNum">0</span>
+		 <span class="sidegoodsNum goodsNum" >0</span>
 		 <img src="../img/sidecar.png" alt="">
 		 <p>购<br>物<br>车</p>
 	</div>
@@ -304,4 +165,5 @@
 </div>
 </body>
 <script src="../js/nav.js"></script>
+<script src="../js/gouwuche.js"></script>
 </html>

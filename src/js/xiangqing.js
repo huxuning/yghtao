@@ -35,8 +35,7 @@ $('.overlay').on('mouseenter',function(){
 			top:pos.top-75
 		});
 		fdj.css({
-			backgroundPositionX:-parseInt(area.css('left'))*2,
-			backgroundPositionY:-parseInt(area.css('top'))*2
+			backgroundPosition:-parseInt(area.css('left'))*2+'px ' + -parseInt(area.css('top'))*2+"px",
 		});
 	})
 	return false;
@@ -48,3 +47,42 @@ $('.overlay').on('mouseenter',function(){
 	fdj.hide();
 	$(window).off('mousemove');
 })
+
+//点击加入购物车
+var idx = $('#goodsNum').html();//商品个数
+$('.jiaru').on('click',function(){
+	var tanchuang = $('.tanchuang');
+	var layer = $('.layer');
+	tanchuang.show();
+	layer.show();
+	// 关闭弹窗
+	function close(){
+		tanchuang.hide();
+		layer.hide();
+	};
+	$('.continued').on('click',function(){
+		close();
+	});
+	$('#close').on('click',function(){
+		close();
+	});
+	//存入cookie
+	var date = new Date();
+	date.setHours(date.getHours()+5);
+	date = date.toGMTString();
+	//总商品数
+	idx ? idx =Number(idx)+Number($('#count').val()) : idx=$('#count').val();
+	//存入cookie
+	var goodsJSON = [{
+						"count":idx,
+						"tejia":$('.tejia span').html(),
+						"yuanjia":$('.shichangjia span').html(),
+					}];
+	goodsJSON = JSON.stringify(goodsJSON);
+	document.cookie = "goods="+goodsJSON+";expires="+date+";path=/";
+	//把数量输出网页上
+	$('.manygoods').html(idx);
+	$('.totalprices').html("￥"+idx*102);
+	gwcNum();
+});
+

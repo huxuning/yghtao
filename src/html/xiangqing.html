@@ -14,8 +14,8 @@
 			<p class="left topLeft"><a href="../index.html">阳光海淘首页</a></p>
 			<div class="right topRight">
 				<span class="left">您好，欢迎来到阳光海淘</span>
-				<a class="left" href="login.html">请登录</a>
-				<a class="left" href="register.html">请注册</a>
+				<a id="pleaselogin" class="left" href="denglu.html">请登录</a>
+				<a class="left" href="zhuce.html">请注册</a>
 				<ul class="left dingdan">
 					<li>我的订单
 						<span class="triangle"></span>
@@ -52,7 +52,7 @@
 						</div>
 					</li>
 				</ul>
-				<p class="left shoppingCart">购物车 <span id="goodsNum"> 0 </span> 件</p>
+				<a href="gouwuche.html" class="left shoppingCart">购物车 <span class="goodsNum"> 0 </span> 件</a>
 			</div>
 		</div>
 	</div>
@@ -62,7 +62,7 @@
 		<h1 class="logo left"><a href="index.html"><img src="../img/logo.png" alt=""></a></h1>
 		<ul class="left nav">
 			<li>
-				<a href="">美妆个护</a>
+				<a href="meizhuanggehu.html">美妆个护</a>
 				<div class="listBottom"></div>
 			</li>
 			<li>
@@ -237,13 +237,26 @@
 		</ul>
 		</div>
 	</nav>
+<!-- tanchuang -->
+<div class="tanchuang">
+	<p class="tanchuang_title">
+		成功加入购物车 
+		<span id="close">&times;</span>
+	</p>
+	<strong class="joingwc">商品已成功添加到购物车</strong>
+	<p class="statistics">目前选购的商品一共含有<span class="manygoods"> 1 </span>件,合计: <span class="totalprices"> ￥102.00 </span></p>
+	<div class="tanchuang_btn">
+		<a class="gotogwc" href="gouwuche.html">去购物车结算</a>
+		<a class="continued">继续购物</a>
+	</div>	
+</div>
+<div class="layer"></div>
 <!-- main -->
 <br>
 <div class="position">
 	<a href="">首页&gt;</a><a href="">美妆个护&gt;</a><a href="">面部护肤&gt;</a><a href="">护肤&gt;</a>【海外直邮】法国Avene雅漾防晒小金刚SPF50 30ml【包邮】
 </div>
 <br>
-
 <div class="shangpinxiangqing">
 	<div class="xiaotu left">
 		<img class="xuanzhong" style="display:block" src="../img/xiaotu1.jpg" alt="">
@@ -261,16 +274,16 @@
 	</div>
 	<div class="xinxi left">
 		<h3>【海外直邮】法国Avene雅漾防晒小金刚SPF50 30ml【包邮】</h3>
-		<p class="tejia">阳  光  价：<span> ￥102.00</span></p>
+		<p class="tejia">阳  光  价：<span>￥102.00</span></p>
 		<p class="shichangjia">市  场  价： <span>￥199.00</span></p>
 		<p>服       务： 由阳光海淘从海外发货,预计5-10日到货</p>
 		<p>税       费： ￥0.00</p>
 		<p>口       碑： 5分</p>
 		<div>
-			购买数量<input type="number" value="1">
+			购买数量<input id="count" type="number" value="1">
 		</div>
 		<a href="" class="goumai">立即购买</a>
-		<a href="" class="jiaru">加入购物车</a>
+		<a class="jiaru">加入购物车</a>
 	</div>
 	<div class="clear"></div>
 </div>
@@ -331,7 +344,7 @@
 <div class="sidebar">
 	<a href="" class="user"><img src="../img/side1.png" alt=""></a>
 	<div class="gouwuche">
-		 <span class="goodsNum sidegoodsNum">0</span>
+		 <span class="sidegoodsNum goodsNum" >0</span>
 		 <img src="../img/sidecar.png" alt="">
 		 <p>购<br>物<br>车</p>
 	</div>
@@ -343,5 +356,6 @@
 	<a href="" class="zhiding"><img src="../img/side7.png" alt=""></a>
 </div>
 </body>
+<script src="../js/nav.js"></script>
 <script src="../js/xiangqing.js"></script>
 </html>
